@@ -78,10 +78,10 @@ Static Function SendMsg(cMsg)
 	Local cTelAPI   := SuperGetMV("VAR_TEL", .F., "https://api.telegram.org/")
 
     // ID do bot do Telegram
-	Local BotID     := SuperGetMV("VAR_BOTID", .F., "1488831808:AAGFIouwdQuVbofFrYSZwh6eDSTTgOESl50")
+	Local BotID     := SuperGetMV("VAR_BOTID", .F., "")
     
     // ID do chat do Telegram
-	Local ChatId    := SuperGetMV("VAR_CHAT", .F., "-524169016")
+	Local ChatId    := SuperGetMV("VAR_CHAT", .F., "")
 
 	oRequest := FWRest():New(cTelAPI)
 	oRequest:setPath("bot" + BotID + "/sendMessage" + "?chat_id=" + ChatId + "&text=" + cMsg + "&parse_mode=html")
