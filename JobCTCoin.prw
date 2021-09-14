@@ -1,6 +1,11 @@
 #INCLUDE 'totvs.ch'
 #INCLUDE "Protheus.ch"
 
+/*
+@author	Lucas Barbosa
+@since	12/09/2021
+*/
+
 User Function JobCTCoin()
 
 	Local cMsg        := ""
